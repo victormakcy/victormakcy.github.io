@@ -1,0 +1,77 @@
+/*FONTS*/
+@font-face {
+  font-family: 'Raleway';
+}
+
+html,body,div,
+h1 {
+  display: block;
+  font-family: Raleway;
+}
+
+html, body {
+	width: 0%;
+}
+
+body {
+	background-color: #DBDBDB;
+}
+
+#main {
+	display: block;
+	position: relative;
+	margin: 160px 0px 0px 200px;
+	white-space: nowrap;
+}
+
+#main h1 {
+	font-size: 6.5em;
+	color: #146A8C;
+	font-weight: 300;
+	margin-bottom: 0px;
+}
+
+#message {
+	font-size:30px;
+	font-weight:300;
+}
+
+#message a {
+	text-decoration: none;
+	color: #316EB0;
+	padding: 0 10px 0 10px;
+}
+
+#message a:hover {
+	text-decoration: underline;
+}
+
+#projects {
+	display: none;
+	margin: 10px 0px 0px 200px;
+}
+
+#projects ul {
+	padding: 0;
+	list-style: none;
+}
+
+#projects a {
+	text-decoration: none;
+	color: #316EB0;
+}
+
+#projects a:hover {
+	text-decoration: underline;
+}
+
+#web {
+	display: inline-block;
+	float: left;
+}
+
+#design {
+	display: inline-block;
+	margin: 0px 0px 0px 60px;
+
+}

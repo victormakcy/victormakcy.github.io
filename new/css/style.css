@@ -52,6 +52,7 @@ a:visited {
 	padding: 30px 0;
 	height: 50px;
 	line-height: 50px;
+	border-bottom: solid 1px #e3e3e3;
 }
 
 #top-nav .home {
@@ -77,15 +78,31 @@ a:visited {
 }
 
 .main {
-	padding: 20px;
+	padding: 55px 20px;
+	height: 50%;
 }
 
 .profile-pic {
 	float: left;
-	max-width: 300px;
+	max-width: 275px;
 }
 
+.blurb {
+	float: right;
+	width: 430px;
+	padding-top:15px;
+}
 
+.blurb h1 {
+	font-weight: 500;
+	font-size: 40px;
+}
+
+.blurb p {
+	font-weight: 300;
+	font-size: 25px;
+	line-height: 30px;
+}
 
 
 

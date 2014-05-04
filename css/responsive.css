@@ -12,7 +12,7 @@
 	}
 }
 
-@media (max-width:745px) {
+@media (max-width:850px) {
 	.profile-pic, .index-blurb {
 		float: none;
 		margin: 0 auto;

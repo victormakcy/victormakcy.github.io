@@ -1,12 +1,12 @@
 /*FONTS*/
 @font-face {
-  font-family: 'Raleway';
+	font-family: 'Raleway';
 }
 
 html,body,div,
-h1, ul {
-  margin: 0;
-  padding: 0;
+h1, ul, p{
+	margin: 0;
+	padding: 0;
 }
 
 html, body {
@@ -45,11 +45,10 @@ a:visited {
 }
 
 #top-nav {
-	max-width: 850px;
 	margin: auto;
 	width: 100%;
-	padding: 30px 0;
-	height: 50px;
+	padding: 30px 0 0 0;
+	height: 80px;
 	line-height: 50px;
 	border-bottom: solid 1px #e3e3e3;
 }
@@ -78,18 +77,8 @@ a:visited {
 
 .main {
 	text-align: center;
-	padding: 55px 20px;
+	padding: 55px 20px 0 20px;
 	height: 50%;
-}
-
-.profile-pic {
-	float: left;
-	max-width: 275px;
-	border-radius: 3px;
-}
-
-.blurb {
-	padding-top:15px;
 }
 
 .blurb p {
@@ -106,10 +95,68 @@ a:visited {
 	border-bottom: solid 2px #8C8C8C;
 }
 
+.profile-pic {
+	float: left;
+	max-width: 275px;
+	border-radius: 3px;
+}
+
 .index-blurb {
 	float: right;
 	width: 430px;
+	padding-top: 15px;
 }
+
+.index-blurb p {
+	margin-top: 23px;
+}
+
+.projects-blurb {
+	padding-top: 0px;
+}
+
+.projects-blurb p {
+	padding-bottom: 85px;
+	border-bottom: 1px solid #000000;
+}
+
+.project-section {
+	padding-bottom: 40px;
+}
+
+.section-title {
+	width: 215px;
+	border: 3px solid black;
+	text-transform: uppercase;
+	padding: 15px 0;
+	font-weight: 600;
+	top: -49px;
+	position: relative;
+	display: inline-block;
+	background: #FFFFFF;
+}
+
+#web {
+	border-bottom: 1px solid #000000;
+}
+
+.project-list {
+	font-size: 65px;
+	font-weight: 600;
+}
+
+.project-list li{
+	margin-bottom: 60px;
+	line-height: 48px;
+}
+
+.project-list a:hover {
+	color: #2E2E2E;
+	border-bottom: none;
+}
+
+
+
 
 /*photo blog css*/
 .site {

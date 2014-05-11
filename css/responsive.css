@@ -1,6 +1,6 @@
 @media (max-width:880px) {
 	#top-nav {
-		padding: 0 0 70px 0;
+		padding: 0 0 40px 0;
 	}
 
 	#top-nav .home {
@@ -29,6 +29,10 @@
 	.blurb p{
 		font-size: 20px;
 	}
+
+	.project-list {
+		font-size: 55px;
+	}
 }
 
 @media (max-width:480px) {
@@ -48,5 +52,7 @@
 		font-size: 18px;
 	}
 
-
+	.project-list {
+		font-size: 45px;
+	}
 }

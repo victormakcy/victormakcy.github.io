@@ -79,6 +79,7 @@ a:visited {
 	text-align: center;
 	padding: 55px 20px 0 20px;
 	height: 50%;
+	border-bottom: solid 2px #e3e3e3;
 }
 
 .blurb p {
@@ -155,9 +156,6 @@ a:visited {
 	border-bottom: none;
 }
 
-
-
-
 /*photo blog css*/
 .site {
 	height: 100%;
@@ -186,3 +184,52 @@ a:visited {
 	width: 900px;
 	height: 598px;
 }
+
+
+/*modal css*/
+.mfp-bg {
+	opacity: 0.9;
+}
+
+
+.mfp-content {
+	vertical-align: top;
+}
+
+.mfp-close-btn-in .mfp-close {
+	position: fixed;
+	color: #555;
+	font-size: 50px;
+	right: 15px;
+	top: 10px;
+}
+
+.modal {
+	position: relative;
+	background: transparent;
+	padding: 20px;
+	width: auto;
+	max-width: 500px;
+	margin: 20px auto;
+	color: #fff;
+}
+
+.modal-title {
+	text-align: center;
+	font-size: 40px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.modal-content span {
+	font-weight: 200;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.modal-content img {
+	max-width: 500px;
+}
+
+

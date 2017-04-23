@@ -1,6 +1,6 @@
-/*FONTS*/
-@font-face {
-  font-family: 'Raleway';
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 html,body,div,
@@ -10,9 +10,8 @@ h1, ul, p{
 }
 
 html, body {
-  font-family: Raleway, Helvetica Neue, Helvetica;
+  font-family: Lato, Helvetica Neue, Helvetica;
   background-color: #fff;
-  text-align: center;
   font-size: 16px;
   height: 100%;
 }
@@ -23,121 +22,137 @@ ul {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #212b35;
 }
 
 a:visited {
-  color: #000;
+  color: #212b35;
 }
 
 /*main site*/
-.wrapper {
-  max-width: 850px;
-  margin: auto;
-  width: 100%;
+.page-header {
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100px;
+}
+
+.page-header__top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
   height: 100%;
-  text-align: center;
-  margin: auto;
+  padding: 0 20px;
 }
 
-.selected {
-  border-bottom: solid 2px #000;
-}
-
-#top-nav {
-  margin: auto;
-  width: 100%;
-  padding: 30px 0 0 0;
-  height: 80px;
-  line-height: 50px;
-  border-bottom: solid 1px #e3e3e3;
-}
-
-#top-nav .home {
-  float: left;
+.home {
   font-size: 26px;
-  font-weight: 900;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 40px;
+  font-family: "Montserrat";
+  letter-spacing: 0.5px;
+}
+
+.home:hover {
+  color: #146a8c;
+}
+
+.nav-items {
+  display: flex;
   text-transform: uppercase;
 }
 
-#top-nav #nav-items {
-  float: right;
+.nav-item a {
+  display: block;
+  padding: 45px 15px 0;
 }
 
-#top-nav #nav-items li {
-  display: inline-block;
-  margin-left: 25px;
-  font-weight: 400;
-  font-size: 17px;
+.nav-item a.selected {
+  border-top: solid 5px #146a8c;
+  padding-top: 40px;
+  color: #146a8c;
 }
 
-#top-nav #nav-items li:hover {
-  border-bottom: solid 2px #000;
+.nav-item a:hover {
+  color: #146a8c;
 }
 
+/* Main Content */
 .main {
-  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 55px 20px 0 20px;
-  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.blurb p {
+.blurb {
   font-weight: 300;
-  font-size: 23px;
-  line-height: 30px;
+  font-size: 26px;
+  line-height: 34px;
+  color: #212b35;
 }
 
 .blurb a {
-  color: #8C8C8C;
+  color: #212b35;
+  background-image: -webkit-linear-gradient(top, #212b35 50%, transparent 50%);
+  background-image: linear-gradient(to bottom, #212b35 50%, transparent 50%);
+  background-position: 0 28px;
+  background-repeat: repeat-x;
+  background-size: 1px 2px;
+  text-shadow: 1px 0px white, -1px 0px white;
 }
 
 .blurb a:hover {
-  border-bottom: solid 2px #8C8C8C;
+  color: #146a8c;
+  background-image: -webkit-linear-gradient(top, #146a8c 50%, transparent 50%);
+  background-image: linear-gradient(to bottom, #146a8c 50%, transparent 50%);
 }
 
 .profile-pic {
-  float: left;
   max-width: 275px;
+  width: 100%;
+  height: 100%;
   border-radius: 3px;
 }
 
 .index-blurb {
-  float: right;
   width: 430px;
-  padding-top: 45px;
-}
-
-.index-blurb p {
-  margin-top: 23px;
 }
 
 .projects-blurb {
-  padding-top: 0px;
+  text-align: center;
 }
 
-.projects-blurb p {
+.projects-blurb {
   padding-bottom: 85px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #212b35;
 }
 
 .project-section {
   padding-bottom: 40px;
+  text-align: center;
+  color: #212b35;
 }
 
 .section-title {
   width: 215px;
-  border: 3px solid black;
+  border: 3px solid #212b35;
   text-transform: uppercase;
   padding: 15px 0;
   font-weight: 600;
   top: -49px;
   position: relative;
   display: inline-block;
-  background: #FFFFFF;
+  background: #fff;
 }
 
 #web {
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #212b35;
 }
 
 .project-list {
@@ -151,82 +166,10 @@ a:visited {
 }
 
 .project-list a:hover {
-  color: #2E2E2E;
+  color: #146a8c;
   border-bottom: none;
 }
 
-/*photo blog css*/
-.site {
-  height: 100%;
-  width: 900px;
-  margin: 0 auto;
-}
-
-.title {
-  font-size: 6.5em;
-  color: #146A8C;
-  font-weight: 300;
-  text-transform: uppercase;
-  float: left;
-  margin-top: 30px;
-}
-
-.album-title {
-  font-size: 2em;
-  color: #146A8C;
-  font-weight: 300;
-  float: left;
-  margin-top: 100px;
-}
-
-.post-photo {
-  width: 900px;
-  height: 598px;
-}
-
-
-/*modal css*/
-.mfp-bg {
-  opacity: 0.9;
-}
-
-
-.mfp-content {
-  vertical-align: top;
-}
-
-.mfp-close-btn-in .mfp-close {
-  position: fixed;
-  color: #555;
-  font-size: 50px;
-  right: 15px;
-  top: 10px;
-}
-
-.modal {
-  position: relative;
-  background: transparent;
-  padding: 20px;
-  width: auto;
-  max-width: 500px;
-  margin: 20px auto;
-  color: #fff;
-}
-
-.modal-title {
+.photos-blurb {
   text-align: center;
-  font-size: 40px;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.modal-content span {
-  font-weight: 200;
-  font-size: 16px;
-  line-height: 21px;
-}
-
-.modal-content img {
-  max-width: 500px;
 }

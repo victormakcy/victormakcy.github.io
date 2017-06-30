@@ -1,21 +1,13 @@
-@media (max-width:850px) {
-  .page-header {
-    height: 130px;
+@media (max-width:900px) {
+  .header {
+    height: 140px;
+    margin-top: 30px;
   }
 
-  .page-header__top-bar {
+  .header__top-bar {
     flex-direction: column;
     text-align: center;
-    justify-content: flex-start;
-    height: 130px;
-  }
-
-  .nav-items {
-    justify-content: center;
-  }
-
-  .home {
-    margin-top: 35px;
+    justify-content: space-around;
   }
 
   .nav-item a {
@@ -39,8 +31,8 @@
   }
 
   .profile-pic {
-    max-width: 250px;
-    margin-bottom: 30px;
+    max-width: 400px;
+    margin: 30px 0;
   }
 
   .project-list {

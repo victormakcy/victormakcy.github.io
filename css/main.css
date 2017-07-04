@@ -189,39 +189,3 @@ a:visited {
   color: #146a8c;
   border-bottom: none;
 }
-
-.photos-blurb {
-  text-align: center;
-}
-
-/* Photos Page */
-.images-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: space-between;
-  flex-wrap: wrap;
-}
-
-.image__wrapper {
-  width: 33.333333333336%;
-}
-
-.margin-wrapper {
-  margin-right: 40px;
-  margin-bottom: 40px;
-}
-
-.image--thumb {
-  width: 100%;
-  display: block;
-}
-
-.margin-wrapper:hover {
-  opacity: .7;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -moz-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
-  cursor: pointer;
-}

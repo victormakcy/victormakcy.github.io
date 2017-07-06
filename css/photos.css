@@ -1,9 +1,18 @@
 .chocolat-overlay {
-  background: #e3e3e3;
+  background: #000;
+  opacity: 0.9;
 }
 
 .chocolat-bottom {
   display: none;
+}
+
+.chocolat-wrapper .chocolat-close {
+  background: none;
+  font-size: 50px;
+  font-weight: 300;
+  right: -5px;
+  top: 5px;
 }
 
 .images-list {
@@ -12,6 +21,8 @@
   align-items: center;
   align-content: space-between;
   flex-wrap: wrap;
+  flex: 1;
+  margin-top: 30px;
 }
 
 .image__wrapper {
@@ -19,7 +30,8 @@
 }
 
 .margin-wrapper {
-  margin-right: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
   margin-bottom: 40px;
 }
 

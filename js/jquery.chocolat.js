@@ -379,7 +379,8 @@
             }).appendTo(this.elems.wrapper);
 
             this.elems.close = $('<span/>', {
-                'class' : 'chocolat-close'
+                'class' : 'chocolat-close',
+                'html' : '&times;'
             }).appendTo(this.elems.top);
 
             this.elems.fullscreen = $('<span/>', {
